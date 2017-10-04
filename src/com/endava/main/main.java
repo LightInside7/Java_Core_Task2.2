@@ -1,14 +1,14 @@
-package Java;
+package com.endava.main;
 
-import Model.LruCache;
-import Model.User;
+import com.endava.model.LruCache;
+import com.endava.model.User;
 
-public class main {
+public class Main {
     public static LruCache<Integer, User> test = new LruCache<>(50);
-    static User user = new User();
-    public static void main (String[] args){
-        for(int i = 1; i <= 50; i++ )
-        {
+    private static User user = new User();
+
+    public static void main(String[] args) {
+        for (int i = 1; i <= 50; i++) {
             test.put(user.getId() + i, new User(("Name" + i), i));
         }
         System.out.println(test);

@@ -1,6 +1,5 @@
-package Model;
+package com.endava.model;
 
-import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
